@@ -1,0 +1,240 @@
+@article{Vitay2014,
+  title   = {Timing and expectation of reward: a neuro-computational model of the afferents to the ventral tegmental area.},
+  author  = {Vitay, Julien and Hamker, Fred H.},
+  journal = {Frontiers in Neurorobotics},
+  year    = {2014},
+  volume  = {8},
+  number  = {4},
+  pages   = {1--14}
+}
+
+@article{Uhlenbeck1930,
+  author    = {Uhlenbeck, G. E. and Ornstein, L.S},
+  title     = {On the Theory of the Brownian Motion},
+  journal   = {Physical Review},
+  volume    = {36},
+  year      = {1930},
+  doi       = {10.1103.PhysRev.36.823}
+}
+
+@article{Williams1992,
+author = {Williams, R. J.},
+journal = {Mach. Learn.},
+pages = {229--256},
+title = {{Simple statistical gradient-following algorithms for connectionist reinforcement learning}},
+volume = {8},
+year = {1992}
+}
+@inproceedings{Wang2016,
+abstract = {In recent years there have been many successes of using deep representations in reinforcement learning. Still, many of these applications use conventional architectures, such as convolutional networks, LSTMs, or auto-encoders. In this paper, we present a new neural network architecture for model-free reinforcement learning. Our dueling network represents two separate estimators: one for the state value function and one for the state-dependent action advantage function. The main benefit of this factoring is to generalize learning across actions without imposing any change to the underlying reinforcement learning algorithm. Our results show that this architecture leads to better policy evaluation in the presence of many similar-valued actions. Moreover, the dueling architecture enables our RL agent to outperform the state-of-the-art on the Atari 2600 domain.},
+address = {New York, NY, USA},
+archivePrefix = {arXiv},
+arxivId = {1511.06581},
+author = {Wang, Z. and Schaul, T. and Hessel, M. and van Hasselt, H. and Lanctot, M. and de Freitas, N.},
+booktitle = {Proc. ICML},
+eprint = {1511.06581},
+title = {{Dueling Network Architectures for Deep Reinforcement Learning}},
+url = {http://arxiv.org/abs/1511.06581},
+year = {2016}
+}
+@inproceedings{Niu2011,
+abstract = {Stochastic Gradient Descent (SGD) is a popular algorithm that can achieve state-of-the-art performance on a variety of machine learning tasks. Several researchers have recently proposed schemes to parallelize SGD, but all require performance-destroying memory locking and synchronization. This work aims to show using novel theoretical analysis, algorithms, and implementation that SGD can be implemented without any locking. We present an update scheme called HOGWILD! which allows processors access to shared memory with the possibility of overwriting each other's work. We show that when the associated optimization problem is sparse, meaning most gradient updates only modify small parts of the decision variable, then HOGWILD! achieves a nearly optimal rate of convergence. We demonstrate experimentally that HOGWILD! outperforms alternative schemes that use locking by an order of magnitude.},
+archivePrefix = {arXiv},
+arxivId = {1106.5730},
+author = {Niu, F. and Recht, B. and Re, C. and Wright, S.J.},
+booktitle = {Proc. Adv. Neural Inf. Process. Syst.},
+eprint = {1106.5730},
+isbn = {9781618395993},
+keywords = {incremental gradient methods,machine learning,multicore,parallel computing},
+pages = {21},
+title = {{HOGWILD!: A Lock-Free Approach to Parallelizing Stochastic Gradient Descent}},
+url = {http://arxiv.org/abs/1106.5730},
+year = {2011}
+}
+@article{Levine2015,
+abstract = {Policy search methods can allow robots to learn control policies for a wide range of tasks, but practical applications of policy search often require hand-engineered components for perception, state estimation, and low-level control. In this paper, we aim to answer the following question: does training the perception and control systems jointly end-to-end provide better performance than training each component separately? To this end, we develop a method that can be used to learn policies that map raw image observations directly to torques at the robot's motors. The policies are represented by deep convolutional neural networks (CNNs) with 92,000 parameters, and are trained using a partially observed guided policy search method, which transforms policy search into supervised learning, with supervision provided by a simple trajectory-centric reinforcement learning method. We evaluate our method on a range of real-world manipulation tasks that require close coordination between vision and control, such as screwing a cap onto a bottle, and present simulated comparisons to a range of prior policy search methods.},
+archivePrefix = {arXiv},
+arxivId = {1504.00702},
+author = {Levine, S. and Finn, C. and Darrell, T. and Abbeel, P.},
+eprint = {1504.00702},
+journal = {Journal of Machine Learning Research},
+title = {{End-to-End Training of Deep Visuomotor Policies}},
+url = {http://arxiv.org/abs/1504.00702},
+volume = {17},
+year = {2016}
+}
+@inproceedings{Silver2014,
+abstract = {In this paper we consider deterministic policy gradient algorithms for reinforcement learning with continuous actions. The deterministic policy gradient has a particularly appealing form: it is the expected gradient of the action-value function. This simple form means that the deterministic policy gradient can be estimated much more efficiently than the usual stochastic policy gradient. To ensure adequate exploration, we introduce an off-policy actor-critic algorithm that learns a deterministic target policy from an exploratory behaviour policy. Deterministic policy gradient algorithms outperformed their stochastic counterparts in several benchmark problems, particularly in high-dimensional action spaces.},
+address = {Beijing, China},
+author = {Silver, D. and Lever, G. and Heess, N. and Degris, T. and Wierstra, D. and Riedmiller, M.},
+booktitle = {{Proceedings of ICML}},
+editor = {Xing, Eric P and Jebara, Tony},
+pages = {387--395},
+publisher = {PMLR},
+series = {Proceedings of Machine Learning Research},
+title = {{Deterministic Policy Gradient Algorithms}},
+volume = {32},
+year = {2014}
+}
+@article{Stollenga2014,
+abstract = {Traditional convolutional neural networks (CNN) are stationary and feedforward. They neither change their parameters during evaluation nor use feedback from higher to lower layers. Real brains, however, do. So does our Deep Attention Selective Network (dasNet) architecture. DasNets feedback structure can dynamically alter its convolutional filter sensitivities during classification. It harnesses the power of sequential processing to improve classification performance, by allowing the network to iteratively focus its internal attention on some of its convolutional filters. Feedback is trained through direct policy search in a huge million-dimensional parameter space, through scalable natural evolution strategies (SNES). On the CIFAR-10 and CIFAR-100 datasets, dasNet outperforms the previous state-of-the-art model.},
+archivePrefix = {arXiv},
+arxivId = {1407.3068},
+author = {Stollenga, M. and Masci, J. and Gomez, F. and Schmidhuber, J.},
+eprint = {1407.3068},
+month = {jul},
+title = {{Deep Networks with Internal Selective Attention through Feedback Connections}},
+url = {http://arxiv.org/abs/1407.3068},
+year = {2014}
+}
+@inproceedings{Levine2016,
+abstract = {We describe a learning-based approach to hand-eye coordination for robotic grasping from monocular images. To learn hand-eye coordination for grasping, we trained a large convolutional neural network to predict the probability that task-space motion of the gripper will result in successful grasps, using only monocular camera images and independently of camera calibration or the current robot pose. This requires the network to observe the spatial relationship between the gripper and objects in the scene, thus learning hand-eye coordination. We then use this network to servo the gripper in real time to achieve successful grasps. To train our network, we collected over 800,000 grasp attempts over the course of two months, using between 6 and 14 robotic manipulators at any given time, with differences in camera placement and hardware. Our experimental evaluation demonstrates that our method achieves effective real-time control, can successfully grasp novel objects, and corrects mistakes by continuous servoing.},
+archivePrefix = {arXiv},
+arxivId = {1603.02199},
+author = {Levine, S. and Pastor, P. and Krizhevsky, A. and Quillen, D.},
+booktitle = {Proc. ISER},
+eprint = {1603.02199},
+title = {{Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection}},
+url = {http://arxiv.org/abs/1603.02199},
+year = {2016}
+}
+@inproceedings{Sutton1999,
+author = {Sutton, R.S. and McAllester, D.A and Singh, S.P. and Mansour, Y.},
+booktitle = {Neural Inf. Process. Syst. 12},
+pages = {1057--1063},
+title = {{Policy Gradient Methods for Reinforcement Learning with Function Approximation}},
+year = {1999}
+}
+@inproceedings{Kingma2014,
+abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
+archivePrefix = {arXiv},
+arxivId = {1412.6980},
+author = {Kingma, D. and Ba, J.},
+booktitle = {Proc. ICLR},
+doi = {http://doi.acm.org.ezproxy.lib.ucf.edu/10.1145/1830483.1830503},
+eprint = {1412.6980},
+isbn = {9781450300728},
+issn = {09252312},
+pages = {1--13},
+title = {{Adam: A Method for Stochastic Optimization}},
+url = {http://arxiv.org/abs/1412.6980},
+year = {2014}
+}
+@inproceedings{Zhang2015,
+abstract = {This paper introduces a machine learning based system for controlling a robotic manipulator with visual perception only. The capability to autonomously learn robot controllers solely from raw-pixel images and without any prior knowledge of configuration is shown for the first time. We build upon the success of recent deep reinforcement learning and develop a system for learning target reaching with a three-joint robot manipulator using external visual observation. A Deep Q Network (DQN) was demonstrated to perform target reaching after training in simulation. Transferring the network to real hardware and real observation in a naive approach failed, but experiments show that the network works when replacing camera images with synthetic images.},
+archivePrefix = {arXiv},
+arxivId = {1511.03791},
+author = {Zhang, F. and Leitner, J. and Milford, M. and Upcroft, B. and Corke, P.},
+booktitle = {Proc. Acra},
+eprint = {1511.03791},
+title = {{Towards Vision-Based Deep Reinforcement Learning for Robotic Motion Control}},
+url = {http://arxiv.org/abs/1511.03791},
+year = {2015}
+}
+@article{Mnih2015,
+author = {Mnih, V. and Kavukcuoglu, K. and Silver, D. and others},
+doi = {10.1038/nature14236},
+issn = {0028-0836},
+journal = {Nature},
+month = {feb},
+number = {7540},
+pages = {529--533},
+publisher = {Nature Publishing Group},
+title = {{Human-level control through deep reinforcement learning}},
+url = {http://www.nature.com/doifinder/10.1038/nature14236},
+volume = {518},
+year = {2015}
+}
+@article{Lillicrap2015,
+abstract = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to find policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies end-to-end: directly from raw pixel inputs.},
+archivePrefix = {arXiv},
+arxivId = {1509.02971},
+author = {Lillicrap, T.P. and Hunt, J.J. and Pritzel, A. and others},
+eprint = {1509.02971},
+journal = {CoRR},
+title = {{Continuous control with deep reinforcement learning}},
+url = {http://arxiv.org/abs/1509.02971},
+year = {2015}
+}
+@incollection{Sutton1990,
+author = {Sutton, R.S. and Barto, A.G.},
+booktitle = {Learn. Comput. Neurosci. Found. Adapt. Networks},
+pages = {497----537},
+publisher = {MIT Press},
+title = {{Time-derivative models of Pavlovian reinforcement}},
+url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.81.98},
+year = {1990}
+}
+@inproceedings{Gu2017,
+abstract = {Reinforcement learning holds the promise of enabling autonomous robots to learn large repertoires of behavioral skills with minimal human intervention. However, robotic applications of reinforcement learning often compromise the autonomy of the learning process in favor of achieving training times that are practical for real physical systems. This typically involves introducing hand-engineered policy representations and human-supplied demonstrations. Deep reinforcement learning alleviates this limitation by training general-purpose neural network policies, but applications of direct deep reinforcement learning algorithms have so far been restricted to simulated settings and relatively simple tasks, due to their apparent high sample complexity. In this paper, we demonstrate that a recent deep reinforcement learning algorithm based on off-policy training of deep Q-functions can scale to complex 3D manipulation tasks and can learn deep neural network policies efficiently enough to train on real physical robots. We demonstrate that the training times can be further reduced by parallelizing the algorithm across multiple robots which pool their policy updates asynchronously. Our experimental evaluation shows that our method can learn a variety of 3D manipulation skills in simulation and a complex door opening skill on real robots without any prior demonstrations or manually designed representations.},
+archivePrefix = {arXiv},
+arxivId = {1610.00633},
+author = {Gu, S. and Holly, E. and Lillicrap, T. and Levine, S.},
+booktitle = {Proc. ICRA},
+eprint = {1610.00633},
+title = {{Deep Reinforcement Learning for Robotic Manipulation with Asynchronous Off-Policy Updates}},
+url = {http://arxiv.org/abs/1610.00633},
+year = {2017}
+}
+@misc{Heess2015,
+author = {Heess, N. and Wayne, G. and Silver, D. and Lillicrap, T. and Tassa, Y. and Erez, T.},
+booktitle = {Proc. Int. Conf. Neural Inf. Process. Syst.},
+pages = {2944--2952},
+publisher = {MIT Press},
+title = {{Learning continuous control policies by stochastic value gradients}},
+url = {http://dl.acm.org/citation.cfm?id=2969569},
+year = {2015}
+}
+@inproceedings{Connect1992,
+abstract = {It has been observed in numerical simulations that a weight decay can improve generalization in a feed-forward neural network. This paper explains why. It is proven that a weight decay has two effects in a linear network. First, it suppresses any irrelevant components of the weight vector by choosing the smallest vector that solves the learning problem. Second, if the size is chosen right, a weight decay can suppress some of the effects of static noise on the targets, which improves generalization quite a lot. It is then shown how to extend these results to networks with hidden layers and non-linear units. Finally the theory is confirmed by some numerical simulations using the data from NetTalk. 1 INTRODUCTION Many recent studies have shown that the generalization ability of a neural network (or any other `learning machine') depends on a balance between the information in the training examples and the complexity of the network, see for instance [1,2,3]. Bad generalization oc...},
+author = {Connect, a.K. and Krogh, A. and Hertz, J.a.},
+booktitle = {Proc. Adv. Neural Inf. Process. Syst.},
+isbn = {1558602224},
+pages = {950--957},
+title = {{A Simple Weight Decay Can Improve Generalization}},
+url = {http://0-citeseerx.ist.psu.edu.innopac.up.ac.za/viewdoc/summary?doi=10.1.1.41.2305},
+volume = {4},
+year = {1992}
+}
+@inproceedings{Mnih2016,
+abstract = {We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core CPU instead of a GPU. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task involving finding rewards in random 3D mazes using a visual input.},
+archivePrefix = {arXiv},
+arxivId = {1602.01783},
+author = {Mnih, V. and Badia, A.P. and Mirza, M. and others},
+booktitle = {Proc. ICML},
+eprint = {1602.01783},
+month = {feb},
+title = {{Asynchronous Methods for Deep Reinforcement Learning}},
+url = {http://arxiv.org/abs/1602.01783},
+year = {2016}
+}
+@book{Sutton1998,
+author = {Sutton, R.S. and Barto, A.G.},
+publisher = {MIT press},
+title = {{Reinforcement learning: An introduction}},
+volume = {28},
+year = {1998}
+}
+@article{Ba2014,
+abstract = {We present an attention-based model for recognizing multiple objects in images. The proposed model is a deep recurrent neural network trained with reinforcement learning to attend to the most relevant regions of the input image. We show that the model learns to both localize and recognize multiple objects despite being given only class labels during training. We evaluate the model on the challenging task of transcribing house number sequences from Google Street View images and show that it is both more accurate than the state-of-the-art convolutional networks and uses fewer parameters and less computation.},
+archivePrefix = {arXiv},
+arxivId = {1412.7755},
+author = {Ba, J. and Mnih, V. and Kavukcuoglu, K.},
+eprint = {1412.7755},
+month = {dec},
+title = {{Multiple Object Recognition with Visual Attention}},
+url = {http://arxiv.org/abs/1412.7755},
+year = {2014}
+}
+@article{Mnih2014,
+abstract = {Applying convolutional neural networks to large images is computationally expensive because the amount of computation scales linearly with the number of image pixels. We present a novel recurrent neural network model that is capable of extracting information from an image or video by adaptively selecting a sequence of regions or locations and only processing the selected regions at high resolution. Like convolutional neural networks, the proposed model has a degree of translation invariance built-in, but the amount of computation it performs can be controlled independently of the input image size. While the model is non-differentiable, it can be trained using reinforcement learning methods to learn task-specific policies. We evaluate our model on several image classification tasks, where it significantly outperforms a convolutional neural network baseline on cluttered images, and on a dynamic visual control problem, where it learns to track a simple object without an explicit training signal for doing so.},
+archivePrefix = {arXiv},
+arxivId = {1406.6247},
+author = {Mnih, V. and Heess, N. and Graves, A. and Kavukcuoglu, K.},
+eprint = {1406.6247},
+month = {jun},
+title = {{Recurrent Models of Visual Attention}},
+url = {http://arxiv.org/abs/1406.6247},
+year = {2014}
+}
+
